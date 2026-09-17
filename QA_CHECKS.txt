@@ -1,0 +1,14 @@
+FINAL QA PASS
+
+- JavaScript syntax checked with Node.
+- All 20 source spritesheets referenced by atlas.js are present.
+- Every statically referenced sprite index is within its atlas range.
+- Navigation reachability checked for every required story interaction and every scene exit.
+- Player spawn points checked against collision geometry.
+- Riverside roads use orientation-correct tiles and logical prop zones.
+- Moonshore uses continuous water; shoreline foam remains on shore boundaries only.
+- Grotto entrance/exit, pool, cart, crystals, and rock masses use separate non-overlapping zones.
+- Volcano visual stone bridges match collision-safe lava crossings.
+- Character world scale is consistent; Namosh and Dr. Meow remain cat-sized.
+- Dialogue portraits preserve source aspect ratio and focus on the upper character portrait area.
+- Loading errors cannot permanently hold the loader at 0%; failed images advance the loader.

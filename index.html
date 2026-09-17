@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Finding No-No-Namosh II — The Four Trails</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#06151d;font-family:Georgia,serif}body{display:grid;place-items:center}#wrap{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at 50% 20%,#173944,#06151d 62%,#02080c)}canvas{display:block;width:min(100vw,177.777vh);height:min(56.25vw,100vh);max-width:100vw;max-height:100vh;image-rendering:auto;background:#10252c;box-shadow:0 0 70px #000b;touch-action:none}#touch{position:fixed;inset:0;pointer-events:none;display:none}.pad,.actions{position:absolute;bottom:18px;display:grid;gap:8px;pointer-events:auto}.pad{left:18px;grid-template-columns:58px 58px 58px;grid-template-rows:58px 58px}.actions{right:18px;grid-template-columns:68px 68px}.tbtn{border:2px solid #ffffff55;background:#0b1c25cc;color:#fff;border-radius:17px;font:800 22px system-ui;backdrop-filter:blur(5px);box-shadow:0 4px 20px #0008;user-select:none;-webkit-user-select:none}.tbtn:active{transform:scale(.95);background:#24404ddd}.up{grid-column:2}.left{grid-row:2;grid-column:1}.down{grid-row:2;grid-column:2}.right{grid-row:2;grid-column:3}.act{height:68px;border-radius:50%}.small{height:50px;font-size:13px}@media (pointer:coarse),(max-width:900px){#touch{display:block}}
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1280" height="720"></canvas></div>
+<div id="touch">
+  <div class="pad">
+    <button class="tbtn up" data-key="ArrowUp">▲</button>
+    <button class="tbtn left" data-key="ArrowLeft">◀</button>
+    <button class="tbtn down" data-key="ArrowDown">▼</button>
+    <button class="tbtn right" data-key="ArrowRight">▶</button>
+  </div>
+  <div class="actions">
+    <button class="tbtn act" data-key="KeyE">E</button>
+    <button class="tbtn act" data-key="Space">⚔</button>
+    <button class="tbtn small" data-key="KeyM">MAP</button>
+    <button class="tbtn small" data-key="Escape">Ⅱ</button>
+  </div>
+</div>
+<script src="atlas.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
